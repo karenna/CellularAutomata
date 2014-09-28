@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="Max_Lines">3</integer>
+    <integer name="ems_7">7</integer>
+    <integer name="column_count_2">2</integer>
+    <integer name="row_count_6">6</integer>
+</resources>

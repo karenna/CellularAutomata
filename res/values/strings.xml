@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">CellularAutomata</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="display_label">Display CA</string>
+    <string name="ca_overview_label">Cellular Automata Overview</string>
+    <string name="ca_overview_label_landscape">Overview</string>
+    <string name="ca_selection_label">Return to CA Selection</string>
+    <string name="exit_label">Exit App</string>
+	<string name="display_raw_data_label">Display Data</string>
+	<string name="display_raw_data">CA cell = row, column, color</string>
+	<string name="display_raw_data_hint">Click here to see underlying data for this CA</string>
+    <string name="rule30_full_desc">Rule 30 uses the rule illustrated pictorially above. This is a cellular automaton with a simple rule that generates a pattern which seems in many respects random. It is also asymmetrical.</string>
+    <string name="rule30_full_desc_landscape">Rule 30 uses the rule illustrated pictorially to the right. This is a cellular automaton with a simple rule that generates a pattern which seems in many respects random. It is also asymmetrical.</string>
+    <string name="rule90_full_desc">Rule 90 uses the rule: start with a single central black cell; make a given cell black whenever one or the other but not both of its neighbors were black on the prior row. This produces an intricate nested pattern.</string>
+    <string name="rule90_full_desc_landscape">Rule 90 uses the rule: start with a single black cell at the middle of the graph, then make a particular cell black whenever one or the other but not both of its neighbors were black on the prior row. This is a cellular automaton that produces an intricate nested pattern.</string>
+    <string name="rule110_full_desc">Rule 110 uses the rule illustrated pictorially above. This is a cellular automaton whose behavior seems neither highly regular nor completely random (it has regular and irregular parts).</string>
+    <string name="rule110_full_desc_landscape">Rule 110 uses the rule illustrated pictorially above. This is a cellular automaton whose behavior seems neither highly regular nor completely random (it has regular and irregular parts).</string>
+    <string name="rule250_full_desc">Rule 250 uses the rule: start with a single central black cell; make a given cell black if either of its neighbors was black on the prior row else white if both neighbors were white. It produces a checkerboard pattern.</string>
+    <string name="rule250_full_desc_landscape">Rule 250 uses the rule: start with a single black cell at the middle of the graph, then make a particular cell black if either of its neighbors was black on the prior row; make the cell white if both its neighbors were white. It produces a checkerboard pattern.</string>
+    <string name="CA30_full_desc">Your generated CA using Rule 30 and the number of iterations you selected:</string>
+    <string name="CA90_full_desc">Your generated CA using Rule 90 and the number of iterations you selected:</string>
+    <string name="CA110_full_desc">Your generated CA using Rule 110 and the number of iterations you selected:</string>
+    <string name="CA250_full_desc">Your generated CA using Rule 250 and the number of iterations you selected:</string>
+    <string name="instructions_label">Create graphic illustrating Cellular Automata (CA) by selecting the CA rule and # of iterations then clicking DISPLAY CA.</string>
+    <string name="display_button_hint">Click here after choosing your settings to display your cellular automaton</string>
+    <string name="spnrRules_prompt">Select the Cellular Automaton Rule to demo.</string>
+    <string name="spnrIterations_prompt">Select how many iterations of the rule to perform.</string>
+    <string name="return_to_main_label">Rtn to Main"/"Go Back</string>
+    <string name="return_to_main_label_landscape">Back</string>
+    <string name="return_to_main_button_hint">Click here to return to the selection (main) screen.</string>
+    <string name="contentDesc_rule30image">Image for Rule 30</string>
+    <string name="contentDesc_rule90image">Image for Rule 90</string>
+    <string name="contentDesc_rule110image">Image for Rule 110</string>
+    <string name="contentDesc_rule250image">Image for Rule 250</string>
+    <string name="rule30_brief_desc">Rule 30-random and asymmetrical</string>
+    <string name="rule90_brief_desc">Rule 90-fractal (AKA Sierpinski Triangle)</string>
+    <string name="rule110_brief_desc">Rule 110-regular plus irregular parts</string>
+    <string name="rule250_brief_desc">Rule 250-repetition</string>
+    <string name="title_activity_activity_main">ActivityMain</string>
+    <string name="title_activity_overview">OverviewActivity</string>
+    <string name="title_activity_rule30">Rule30Activity</string>
+    <string name="title_activity_rule90">Rule90Activity</string>
+    <string name="title_activity_rule110">Rule110Activity</string>
+    <string name="title_activity_rule250">Rule250Activity</string>
+    <string name="title_activity_display_raw_data">DisplayRawDataActivity</string>
+    <string name="ca_ovrvw_par1">A &lt;i&gt;Cellular Automaton&lt;/i&gt; (CA) is a collection of \&quot;colored\&quot; cells on a grid, created by following a set of rules based on the state (i.e., color) of neighboring cells. When the rules are applied iteratively, a pattern emerges.</string>
+    <string name="ca_ovrvw_par2">Von Neumann was one of the 1st individuals to incorporate a cellular model into his work. Stephen Wolfram, in the 50\'s, studied CA as a model for biological systems. His work over decades resulted in his 2002 book, &lt;u&gt;A New Kind of Science&lt;/u&gt;.</string>
+    <string name="ca_ovrvw_par3">This app demonstrates 4 of the 256 basic CA rules, using just black and white cells. You may choose which of the 4 rules to illustrate and may set the number of iterations to perform.</string>
+    <string name="menuMain">Main</string>
+    <string name="menuRule30">Rule30</string>
+    <string name="menuRule90">Rule90</string>
+    <string name="menuRule110">Rule110</string>
+    <string name="menuRule250">Rule250</string>
+	<string name="menuOverview">Overview</string>
+	<string name="menuExit">Exit</string>
+	<string name="more_data_label">Next Group</string>    
+	<string name="prior_data_label">Prior Group</string>
+
+</resources>

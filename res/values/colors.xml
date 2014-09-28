@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+   	<!-- reds -->
+   	<color name="opaque_red">#ff0000</color>
+   	<color name="translucent_red">#80ff0000</color>
+   	<color name="opaque_brick">#8b1a1a</color>
+  	<color name="opaque_cranberry">#a52a2a</color>
+   	<color name="opaque_dark_cranberry">#8b2323</color>
+ 	<!-- end reds -->
+   
+   	<!-- blues -->
+   	<color name="translucent_blue">#0000cc</color>
+   	<color name="opaque_light_blue">#3399ff</color>
+   	<color name="opaque_medium_blue">#1c86ee</color>
+   	<color name="opaque_medium_blue2">#0000cd</color>
+   	<color name="opaque_dark_blue">#00008b</color>
+   	<color name="opaque_light_steelblue">#add8e6</color>
+   	<color name="opaque_medium_steelblue">#6ca6cd</color>
+   	<color name="opaque_dark_dodgerblue">#104e8b</color>
+   	<color name="opaque_dark_steelblue">#4a7088</color>
+   	<color name="opaque_skyblue">#7ec0ee</color>
+   	<color name="opaque_dpskyblue">#009acd</color>
+   	<color name="opaque_cornflwrblue">#6495ed</color>
+   	<color name="opaque_dark_cornflwrblue">#1e90ff</color>
+   	<color name="opaque_pretty_blue">#0000cd</color>
+   	<color name="opaque_cobalt">#0000ff</color>
+   	<color name="opaque_dark_cobalt">#0000ee</color>
+    <!-- end blues -->
+   
+	<!-- aquas/teals --> 
+   	<color name="opaque_light_aqua">#97ffff</color>
+   	<color name="opaque_medium_aqua">#8deeee</color>
+   	<color name="opaque_cyan">#00ffff</color>
+   	<color name="opaque_deep_teal">#00688b</color>	
+	<!-- end aquas/teals -->
+
+   	<!-- purples -->
+   	<color name="opaque_light_purple">#9b30ff</color>
+	<color name="opaque_purple">#8b008b</color>
+   	<color name="opaque_purple2">#68228b</color>   
+    <color name="opaque_light_iris">#e6e6fa</color>
+    <color name="opaque_medium_iris">#836fff</color>
+    <color name="opaque_dark_iris">#6a5acd</color>
+    <color name="opaque_dark_iris2">#483d8b</color>
+    <color name="opaque_dark_iris3">#912CEE</color>
+    <color name="opaque_dark_iris4">#7d26cd</color>
+   	<color name="opaque_light_orchid">#ee7ae9</color>
+   	<color name="opaque_medium_orchid">#b23aee</color>
+   	<color name="opaque_dark_orchid">#7a378b</color>
+   	<color name="opaque_dark_orchid2">#9a32cd</color>
+   	<color name="opaque_dark_aubergine">#551a8b</color>
+   	<color name="opaque_gray_purple">#8b668b</color>
+   	<color name="opaque_bright_purple">#a020f0</color>
+   	<color name="opaque_bright_purple2">#a020f0</color>      	
+   	<!-- end purples -->
+
+	<!-- oranges -->
+   	<color name="opaque_orange">#ee4000</color>
+	<color name="opaque_dk_orange">#cd3700</color>
+    <color name="opaque_lt_pumpkin">#ee7600</color>  	
+	<!-- end oranges -->
+
+   	<!-- grays -->
+	<color name="opaque_verylight_gray">#e0eeee</color>
+   	<color name="opaque_medium_gray">#68838b</color>   
+	<color name="opaque_muddygray">#888b7a</color>
+   	<color name="opaque_light_silver">#dcdcdc</color>
+	<color name="opaque_silver">#c0c0c0</color>
+   	<color name="opaque_dark_silver">#bebebe</color>
+	<color name="opaque_slate">#708090</color>
+   	<color name="opaque_dark_slate">#6c7b8b</color>
+    <!-- end grays -->
+   	
+   	<!-- greens -->
+   	<color name="opaque_mint">#66ccff</color>
+   	<color name="opaque_medium_mint">#79cdcd</color>
+   	<color name="opaque_medium_mint2">#528b8b</color>
+   	<color name="opaque_seagreen">#20b2aa</color>   	
+    <color name="opaque_dark_hunter">#2f4f4f</color>
+   	<!-- end greens -->
+   
+	<!-- yellows -->
+   	<color name="opaque_goldenyellow">#ffd700</color>
+   	<color name="opaque_light_goldenyellow">#eee8aa</color>
+   	<color name="opaque_butternut">#eead0e</color>	
+   	<color name="opaque_light_amber">#e9967a</color>
+   	<!-- end yellows -->
+	
+	<!-- pinks -->
+  	<color name="opaque_pink">#eea9b8</color>
+   	<color name="opaque_medium_pink">#cd6889</color>
+   	<color name="opaque_dark_pink">#ee6aa7</color>
+   	<color name="opaque_raspberry">#ee1289</color>
+   	<color name="opaque_dark_raspberry">#cd1076</color>
+   	<color name="opaque_mauve">#cd8c95</color>
+   	<color name="opaque_dark_mauve">#8B5f65</color>
+   	<color name="opaque_magenta">#ff00ff</color>
+   	<color name="opaque_bisque">#ffe4c4</color>
+   	<color name="opaque_dark_bisque">#cdb79e</color>
+    <!-- end pinks -->
+    
+    <!-- peaches/corals/salmons -->
+   	<color name="opaque_peach">#ffdab9</color>
+   	<color name="opaque_medium_peach">#eecbad</color>
+   	<color name="opaque_light_coral">#f08080</color>
+   	<color name="opaque_coral">#ee6a50</color>
+   	<color name="opaque_salmon">#e9967a</color>
+    <!-- end peaches/corals/salmons -->
+
+	<!-- browns --> 
+   	<color name="opaque_mocha">#8b6914</color>
+   	<color name="opaque_medium_mocha">#8B6508</color>
+   	<color name="opaque_saddlebrown">#8b4513</color>
+	<!-- end browns -->
+
+   	<!-- blacks -->
+   	<color name="opaque_black">#000000</color>
+   	<!-- end blacks -->
+ 
+   	<!-- whites -->
+   	<color name="opaque_white">#ffffff</color>
+   	<color name="opaque_ghost_white">#f8f8ff</color>
+   	<color name="opaque_snow">#fffafa</color>
+   	<color name="opaque_offwhite">#fafad2</color>
+   	<color name="opaque_offwhite2">#fffaf0</color>
+  	<color name="opaque_seashell">#fff5ee</color>
+    <!-- end whites -->
+   
+	<!-- tans/taupes -->
+   	<color name="opaque_light_tan">#eeeed1</color>
+   	<color name="opaque_medium_tan">#8b864e</color>
+   	<color name="opaque_taupe">#8b7d6b</color>
+   	<color name="opaque_blanchedalmond">#ffebcd</color>
+    <!-- end tans/taupes -->   
+
+   	<!-- metals -->
+   	<color name="opaque_copper">#b8860b</color>   
+   	<!-- end metals -->
+
+</resources>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item
+        android:id="@+id/menuMain"
+        android:title="@string/menuMain"/>
+   <item
+       android:id="@+id/menuRule30"
+       android:title="@string/menuRule30" />
+   <item
+       android:id="@+id/menuRule90"
+       android:title="@string/menuRule90" />
+   <item
+       android:id="@+id/menuRule110"
+       android:title="@string/menuRule110" />
+   <item
+       android:id="@+id/menuOverview"
+       android:title="@string/menuOverview" />
+
+</menu>

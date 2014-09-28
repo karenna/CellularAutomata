@@ -1,0 +1,128 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linlyo_displayrawdata_outer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/opaque_medium_blue"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".DisplayRaw_Data_Activity" >
+    
+ 	<LinearLayout
+
+        android:id="@+id/linlyo_displayrawdata_top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="58"
+        android:background="@color/opaque_medium_blue"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:stretchColumns="1" >
+    
+	    <TextView
+	        android:id="@+id/txtvw_dsply_raw_data_prgrs"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+        	android:layout_weight="8"
+	        android:layout_marginTop="@dimen/rawdata_progress_margin_top"
+	        android:layout_marginBottom="@dimen/rawdata_progress_margin_bottom"
+	        android:text="@string/display_raw_data"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/opaque_black"
+	        android:textColorLink="@color/opaque_black"
+	        android:textSize="@dimen/rawdata_progress_pt_size"
+	        android:textStyle="normal"
+	        android:typeface="sans" />
+
+	    <ListView
+	        android:id="@android:id/list"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+        	android:layout_weight="92"
+	        android:drawSelectorOnTop="true"
+	        android:fadeScrollbars="false"
+	        android:fastScrollAlwaysVisible="false"
+	        android:fastScrollEnabled="true"
+	        android:scrollbarSize="100.5px"
+	        android:scrollbarStyle="outsideOverlay"
+	        android:smoothScrollbar="true"
+	        android:transcriptMode="normal" >	
+	    </ListView>
+
+	</LinearLayout>
+
+	<LinearLayout
+        android:id="@+id/linlyo_rawdata_middle"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="34"
+        android:background="@color/opaque_medium_blue" >
+
+		<Button
+		    android:id="@+id/btn_overview"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_marginBottom="@dimen/rawdata_wide_button_margin_bottom"
+		    android:layout_marginLeft="@dimen/rawdata_wide_button_margin_left"
+		    android:layout_marginRight="@dimen/rawdata_wide_button_margin_right"
+		    android:layout_marginTop="@dimen/rawdata_wide_button_margin_top"
+		    android:layout_weight="100"
+		    android:background="@color/opaque_medium_blue"
+		    android:enabled="false"
+		    android:gravity="center"
+		    android:paddingBottom="@dimen/wide_button_padding_bottom"
+		    android:paddingLeft="@dimen/instructions_padding_horiz"
+		    android:paddingRight="@dimen/instructions_padding_horiz"
+		    android:paddingTop="@dimen/wide_button_padding_top"
+		    android:text="@string/ca_overview_label"
+		    android:textColor="@color/opaque_medium_blue"
+		    android:textColorHint="@color/opaque_medium_blue"
+		    android:textColorLink="@color/opaque_medium_blue"
+		    android:textStyle="normal"
+		    android:typeface="sans" />
+
+	</LinearLayout>
+
+    <LinearLayout
+    	android:id="@+id/linlyo_rawdata_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="14" 
+        android:layout_marginLeft="@dimen/ovrvw_narrow_button_margin_left"
+        android:layout_marginRight="@dimen/ovrvw_narrow_button_margin_right" >
+                
+        <Button
+            android:id="@+id/btn_return_to_prior_from_rawdata"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+            android:layout_gravity="center"
+            android:background="@color/opaque_black"
+            android:hint="@string/return_to_main_button_hint"
+            android:text="@string/return_to_main_label"
+            android:textColor="@color/opaque_dark_cornflwrblue"
+            android:textColorHint="@color/opaque_dark_cornflwrblue"
+            android:textColorLink="@color/opaque_dark_blue"
+            android:textStyle="normal"
+            android:typeface="sans" />
+        
+        <Button
+            android:id="@+id/btn_ghost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:layout_gravity="center"
+            android:background="@color/opaque_medium_blue" />
+
+    </LinearLayout>
+
+</LinearLayout>

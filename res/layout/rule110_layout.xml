@@ -1,0 +1,278 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linlyo_rule110_outer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/opaque_medium_blue"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Rule110Activity" >
+
+    <LinearLayout
+        android:id="@+id/linlyo_CA110_fulldesc"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="20"
+        android:paddingTop="@dimen/rule_activity_padding_top"
+        android:paddingBottom="@dimen/rule_activity_padding_bottom"
+        android:paddingLeft="@dimen/rule_activity_padding_left"
+        android:paddingRight="@dimen/rule_activity_padding_right"
+        android:background="@color/opaque_medium_blue"
+        android:stretchColumns="1" >
+
+ 	   <TextView
+           android:id="@+id/txtvw_CA110_fulldesc"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_gravity="fill_vertical|fill_horizontal"
+           android:layout_weight="100"
+           android:enabled="true"
+           android:layout_marginTop="@dimen/rule_desc_margin_top"
+	       android:layout_marginBottom="@dimen/rule_desc_margin_bottom"
+           android:paddingBottom="@dimen/instructions_padding_vertical"
+           android:paddingLeft="@dimen/instructions_padding_horiz"
+           android:paddingRight="@dimen/instructions_padding_horiz"
+           android:paddingTop="@dimen/instructions_padding_vertical"
+           android:text="@string/CA110_full_desc"
+           android:textAllCaps="true"
+           android:textColor="@color/opaque_black"
+           android:textColorLink="@color/opaque_black"
+           android:textSize="@dimen/instructions_pt_size"
+           android:textStyle="normal"
+           android:typeface="sans"
+           android:visibility="visible" />
+
+ 	</LinearLayout>
+   
+     <LinearLayout
+		android:id="@+id/linlyo_rule110_CArendered"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="@dimen/rule_activity_padding_top"
+	    android:paddingBottom="@dimen/rule_activity_padding_bottom"
+	    android:paddingLeft="@dimen/rule_activity_padding_left"
+	    android:paddingRight="@dimen/rule_activity_padding_right"
+	    android:background="@color/opaque_medium_blue"
+	    android:stretchColumns="1" >
+	    	   
+	 	<csc212.project4.GraphView
+	    	android:id="@+id/grphvw_rule110"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center_horizontal"
+	    	android:layout_marginTop="@dimen/rule_graph_margin_top"
+	        android:layout_marginBottom="@dimen/rule_graph_margin_bottom"	
+	       	android:contentDescription="@string/contentDesc_rule110image"
+	       	android:background="@color/opaque_medium_blue" />
+
+ 	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlyo_rule110_graphicalDesc"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="22"
+        android:background="@color/opaque_medium_blue"
+        android:paddingBottom="@dimen/rule_activity_padding_top"
+        android:paddingLeft="@dimen/rule_activity_padding_bottom"
+        android:paddingRight="@dimen/rule_activity_padding_left"
+        android:paddingTop="@dimen/rule_activity_padding_right"
+        android:stretchColumns="1" >
+    
+     	<ImageView
+	        android:id="@+id/imgvw_rule110"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="100"
+	    	android:layout_marginTop="@dimen/rule_image_margin_top"
+	        android:layout_marginBottom="@dimen/rule_image_margin_bottom"	
+	        android:contentDescription="@string/contentDesc_rule110image"
+	        android:gravity="center"
+	        android:scaleType="fitXY"
+	        android:adjustViewBounds="true" 
+	        android:orientation="vertical"
+	        android:src="@drawable/cellular_automaton_110_rule" />
+	  	
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlyo_rule110_desc"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="15"
+        android:background="@color/opaque_medium_blue"
+        android:paddingBottom="@dimen/rule_activity_padding_top"
+        android:paddingLeft="@dimen/rule_activity_padding_bottom"
+        android:paddingRight="@dimen/rule_activity_padding_left"
+        android:paddingTop="@dimen/rule_activity_padding_right"
+        android:stretchColumns="1" >
+      
+	  	<TextView
+	        android:id="@+id/txtvw_rule110_fulldesc"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="100"
+	        android:layout_gravity="fill_vertical|fill_horizontal"
+	        android:enabled="true"
+	    	android:layout_marginTop="@dimen/rule_desc_margin_top"
+	        android:layout_marginBottom="@dimen/rule_desc_margin_bottom"
+	        android:paddingBottom="@dimen/instructions_padding_vertical"
+	        android:paddingLeft="@dimen/instructions_padding_horiz"
+	        android:paddingRight="@dimen/instructions_padding_horiz"
+	        android:paddingTop="@dimen/instructions_padding_vertical"
+	        android:text="@string/rule110_full_desc"
+	        android:textAllCaps="true"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/opaque_black"
+	        android:textColorLink="@color/opaque_black"
+	        android:textSize="@dimen/instructions_pt_size"
+	        android:textStyle="normal"
+	        android:typeface="sans" />
+
+	</LinearLayout>
+    
+    <LinearLayout
+	   android:id="@+id/linlyo_rule110_middle"
+	   android:orientation="vertical"
+	   android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="100"
+       android:layout_weight="14"
+       android:background="@color/opaque_medium_blue" >
+
+		<Button
+		    android:id="@+id/btn_overview_from_rule110"
+		    android:enabled="true"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="100"
+		    android:layout_marginTop="@dimen/rule_wide_button_margin_top"
+			android:layout_marginBottom="@dimen/rule_wide_button_margin_bottom"
+		    android:layout_marginLeft="@dimen/ovrvw_wide_button_margin_left"
+		    android:layout_marginRight="@dimen/ovrvw_wide_button_margin_right"
+		    android:paddingTop="@dimen/wide_button_padding_top"
+		    android:paddingBottom="@dimen/wide_button_padding_bottom"
+		    android:paddingLeft="@dimen/instructions_padding_horiz"
+		    android:paddingRight="@dimen/instructions_padding_horiz"
+		    android:background="@color/opaque_black"
+		    android:gravity="center"
+		    android:text="@string/ca_overview_label"
+		    android:textColor="@color/opaque_dark_cornflwrblue"
+		    android:textColorHint="@color/opaque_dark_cornflwrblue"
+		    android:textColorLink="@color/opaque_dark_blue"
+		    android:textStyle="normal"
+		    android:typeface="sans" />
+
+	</LinearLayout>
+    
+	<LinearLayout
+        android:id="@+id/linlyo_rule110_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="14" 
+        android:layout_marginLeft="@dimen/ovrvw_narrow_button_margin_left"
+        android:layout_marginRight="@dimen/ovrvw_narrow_button_margin_right" >
+
+   		<Button
+        	android:id="@+id/btn_return_to_main_from_rule110"
+        	android:layout_width="0dp"
+        	android:layout_height="40dp"
+        	android:layout_weight="40"
+        	android:layout_gravity="center"
+        	android:background="@color/opaque_black"
+        	android:hint="@string/return_to_main_button_hint"
+       	 	android:text="@string/return_to_main_label"
+        	android:textColor="@color/opaque_dark_cornflwrblue"
+        	android:textColorHint="@color/opaque_dark_cornflwrblue"
+        	android:textColorLink="@color/opaque_dark_blue"
+        	android:textStyle="normal"
+        	android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btn_ghost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@color/opaque_medium_blue" /> 
+   		
+    	<Button
+        	android:id="@+id/btn_display_raw_data_from_rule110"
+        	android:enabled="true"
+        	android:layout_width="0dp"
+        	android:layout_height="40dp"
+        	android:layout_weight="24"
+        	android:layout_gravity="center"
+            android:background="@color/opaque_black"
+        	android:hint="@string/display_raw_data_hint"     
+            android:text="@string/display_raw_data_label"
+            android:textColor="@color/opaque_dark_cornflwrblue"
+            android:textColorHint="@color/opaque_dark_cornflwrblue"
+            android:textColorLink="@color/opaque_dark_blue"
+            android:textStyle="normal"
+            android:textSize="@dimen/rawdata_progress_pt_size"
+            android:typeface="sans" />
+ 
+    	<Button
+            android:id="@+id/btn_ghost2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@color/opaque_medium_blue" />
+
+    	<Button
+            android:id="@+id/btn_next_rows"
+            android:enabled="false"
+	    	android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="15"
+            android:layout_gravity="center"
+            android:background="@color/opaque_black"
+            android:text="@string/more_data_label"
+            android:textColor="@color/opaque_black"
+            android:textColorHint="@color/opaque_dark_cornflwrblue"
+            android:textColorLink="@color/opaque_dark_blue"
+            android:textStyle="normal"
+            android:textSize="@dimen/rawdata_progress_pt_size"
+            android:typeface="sans" />
+
+    	<Button
+            android:id="@+id/btn_ghost3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@color/opaque_medium_blue" />
+
+    	<Button
+            android:id="@+id/btn_prior_rows"
+            android:enabled="false"
+	    	android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="15"
+            android:layout_gravity="center"
+            android:background="@color/opaque_black"
+            android:text="@string/prior_data_label"
+            android:textColor="@color/opaque_black"
+            android:textColorHint="@color/opaque_dark_cornflwrblue"
+            android:textColorLink="@color/opaque_dark_blue"
+            android:textStyle="normal"
+            android:textSize="@dimen/rawdata_progress_pt_size"
+            android:typeface="sans" />
+
+	</LinearLayout>
+
+</LinearLayout>

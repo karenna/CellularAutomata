@@ -1,0 +1,302 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linlyo_rule90_outer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/opaque_medium_blue"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    tools:context=".Rule90Activity" >
+
+  	<LinearLayout
+        android:id="@+id/linlyo_CA90_fulldesc"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/opaque_medium_blue">
+
+ 	   <TextView
+           android:id="@+id/txtvw_CA90_fulldesc"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+	       android:layout_gravity="fill_vertical|fill_horizontal"
+	       android:paddingBottom="@dimen/instructions_padding_bottom_landscape"
+           android:paddingTop="@dimen/instructions_padding_top_landscape"
+           android:enabled="true"
+           android:text="@string/CA90_full_desc"
+           android:textAllCaps="true"
+           android:textColor="@color/opaque_black"
+           android:textColorLink="@color/opaque_black"
+           android:textSize="@dimen/instructions_pt_size_landscape2"
+           android:textStyle="normal"
+           android:typeface="sans"
+           android:visibility="visible" />
+
+ 	</LinearLayout>   <!--end fulldesc-->
+
+    <LinearLayout
+		        android:id="@+id/linlyo_CA90_three_columns"
+		        android:orientation="horizontal"
+		        android:layout_weight="100"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@color/opaque_medium_blue" >
+
+	    <LinearLayout
+	        android:id="@+id/linlyo_rule90_LeftColumn"
+	        android:layout_width="0dp"
+	        android:layout_weight="30"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+			android:layout_marginLeft="@dimen/rule_activity_margin_left_landscape"
+			android:layout_marginRight="@dimen/rule_activity_margin_right_landscape"
+	        android:background="@color/opaque_medium_blue" >
+
+	        <LinearLayout
+	        	android:id="@+id/linlyo_rule90_group_buttons"
+	        	android:orientation="vertical"
+	        	android:layout_weight="60"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="52dp"
+	        	android:background="@color/opaque_medium_blue" >
+	        
+				<LinearLayout
+			        android:id="@+id/linlyo_rule90_top_buttons"
+			        android:orientation="horizontal"
+			        android:layout_weight="30"
+			        android:layout_width="match_parent"
+			        android:layout_height="26dp"
+			        android:background="@color/opaque_medium_blue" >
+			
+			   		<Button
+			        	android:id="@+id/btn_return_to_main_from_rule90"
+			        	android:layout_width="0dp"
+			        	android:layout_height="26dp"
+			        	android:layout_weight="49"
+			        	android:layout_gravity="center"
+			        	android:background="@color/opaque_black"
+			        	android:hint="@string/return_to_main_button_hint"
+			       	 	android:text="@string/return_to_main_label_landscape"
+			        	android:textColor="@color/opaque_dark_cornflwrblue"
+			        	android:textColorHint="@color/opaque_dark_cornflwrblue"
+			        	android:textColorLink="@color/opaque_dark_blue"
+			        	android:textStyle="normal"
+			        	android:textSize="@dimen/label_pt_size_landscape"
+			        	android:typeface="sans" />
+			
+			        <Button
+			            android:id="@+id/btn_ghost"
+			            android:layout_width="0dp"
+			            android:layout_height="26dp"
+			            android:layout_weight="2"
+			            android:layout_gravity="center"
+			            android:background="@color/opaque_medium_blue" /> 
+			   		
+			    	<Button
+			        	android:id="@+id/btn_display_raw_data_from_rule90"
+			        	android:enabled="true"
+			        	android:layout_width="0dp"
+			        	android:layout_height="26dp"
+			        	android:layout_weight="49"
+			        	android:layout_gravity="center"
+			            android:background="@color/opaque_black"
+			        	android:hint="@string/display_raw_data_hint"     
+			            android:text="@string/display_raw_data_label"
+			            android:textColor="@color/opaque_dark_cornflwrblue"
+			            android:textColorHint="@color/opaque_dark_cornflwrblue"
+			            android:textColorLink="@color/opaque_dark_blue"
+			            android:textStyle="normal"
+			            android:textSize="@dimen/label_pt_size_landscape"
+			            android:typeface="sans" />
+			
+				</LinearLayout> <!--end top buttons-->
+
+	    		<LinearLayout
+				   android:id="@+id/linlyo_rule90_middle_button"
+				   android:orientation="vertical"
+				   android:layout_weight="30"
+				   android:layout_width="match_parent"
+			       android:layout_height="wrap_content"
+			       android:background="@color/opaque_medium_blue" >
+			
+					<Button
+					    android:id="@+id/btn_overview_from_rule90"
+					    android:enabled="true"
+					    android:layout_width="match_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="100"
+					    android:background="@color/opaque_black"
+					    android:gravity="center"
+					    android:paddingTop="@dimen/wide_button_padding_bottom_landscape"
+					    android:paddingBottom="@dimen/wide_button_padding_top_landscape"
+					    android:layout_marginTop="@dimen/rule_wide_button_margin_top"
+					    android:layout_marginBottom="@dimen/rule_wide_button_margin_bottom"
+					    android:text="@string/ca_overview_label_landscape"
+					    android:textColor="@color/opaque_dark_cornflwrblue"
+					    android:textColorHint="@color/opaque_dark_cornflwrblue"
+					    android:textColorLink="@color/opaque_dark_blue"
+					    android:textStyle="normal"
+					    android:textSize="@dimen/label_pt_size_landscape"
+					    android:typeface="sans" />
+
+				</LinearLayout>	<!--end overview button-->
+	
+				<LinearLayout
+			        android:id="@+id/linlyo_rule90_bottom_buttons"
+			        android:orientation="horizontal"
+			        android:layout_weight="30"
+			        android:layout_width="match_parent"
+			        android:layout_height="26dp"
+			        android:background="@color/opaque_medium_blue" >
+
+			    	<Button
+			            android:id="@+id/btn_next_rows"
+			            android:enabled="false"
+				    	android:visibility="visible"
+			            android:layout_width="0dp"
+			            android:layout_height="26dp"
+			            android:layout_weight="49"
+			            android:layout_gravity="center"
+			            android:background="@color/opaque_black"
+			            android:text="@string/more_data_label"
+			            android:textColor="@color/opaque_black"
+			            android:textColorHint="@color/opaque_dark_cornflwrblue"
+			            android:textColorLink="@color/opaque_dark_blue"
+			            android:textStyle="normal"
+			            android:textSize="@dimen/label_pt_size_landscape"
+			            android:typeface="sans" />
+			
+			    	<Button
+			            android:id="@+id/btn_ghost2"
+			            android:layout_width="0dp"
+			            android:layout_height="26dp"
+			            android:layout_weight="2"
+			            android:layout_gravity="center"
+			            android:background="@color/opaque_medium_blue" />
+			
+			    	<Button
+			            android:id="@+id/btn_prior_rows"
+			            android:enabled="false"
+				    	android:visibility="visible"
+			            android:layout_width="0dp"
+			            android:layout_height="26dp"
+			            android:layout_weight="49"
+			            android:layout_gravity="center"
+			            android:background="@color/opaque_black"
+			            android:text="@string/prior_data_label"
+			            android:textColor="@color/opaque_black"
+			            android:textColorHint="@color/opaque_dark_cornflwrblue"
+			            android:textColorLink="@color/opaque_dark_blue"
+			            android:textStyle="normal"
+			            android:textSize="@dimen/label_pt_size_landscape"
+			            android:typeface="sans" />
+			
+				</LinearLayout> <!--end bottom buttons-->
+	
+			</LinearLayout>	<!--end group buttons-->
+
+			<LinearLayout
+		        android:id="@+id/linlyo_rule90_graphicalDesc"
+		        android:orientation="vertical"
+		        android:layout_weight = "20"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/opaque_medium_blue">
+
+		     	<ImageView
+		     	    android:id="@+id/imgvw_rule90"
+		     	    android:layout_width="match_parent"
+		     	    android:layout_height="30dp"
+		     	    android:adjustViewBounds="true"
+		     	    android:contentDescription="@string/contentDesc_rule90image"
+		     	    android:gravity="center"
+		     	    android:orientation="vertical"
+		     	    android:src="@drawable/cellular_automaton_90_rule" />
+	  	
+			</LinearLayout>	<!--end graphical desc-->
+
+		    <LinearLayout
+		        android:id="@+id/linlyo_rule90_desc"
+		        android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight = "20"
+		        android:background="@color/opaque_medium_blue" >
+
+			  	<TextView
+			        android:id="@+id/txtvw_rule90_fulldesc"
+			        android:layout_width="wrap_content"
+			        android:layout_height="0dp"
+			        android:layout_weight="100"
+			        android:layout_gravity="fill_vertical|fill_horizontal"
+			        android:paddingBottom="@dimen/instructions_padding_top_landscape"
+		            android:paddingTop="@dimen/instructions_padding_bottom_landscape"
+			        android:enabled="true"
+			        android:text="@string/rule90_full_desc_landscape"
+			        android:textAllCaps="true"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="@color/opaque_black"
+			        android:textColorLink="@color/opaque_black"
+			        android:textSize="@dimen/instructions_pt_size_landscape2"
+			        android:textStyle="normal"
+			        android:typeface="sans" />
+
+			</LinearLayout>	<!--end (written) desc-->
+
+		</LinearLayout> <!--end left column-->
+
+	    <LinearLayout
+	        android:id="@+id/linlyo_rule90_MiddleColumn"
+	        android:layout_width="0dp"
+	        android:layout_weight="10"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:background="@color/opaque_medium_blue" >
+
+		</LinearLayout> <!--end middle column which is just to provide some separation between left and right columns-->
+
+		<LinearLayout
+		    android:id="@+id/linlyo_rule90_RightColumn"
+		    android:layout_width="0dp"
+		    android:layout_weight="60"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:layout_marginLeft="@dimen/no_margin"
+		    android:layout_marginRight="@dimen/no_margin"
+		    android:layout_marginTop="@dimen/no_margin"
+		    android:layout_marginBottom="@dimen/no_margin"
+		    android:padding="@dimen/no_padding"
+		    android:background="@color/opaque_medium_blue" >
+
+			<LinearLayout
+				android:id="@+id/linlyo_rule90_CArenderedLandscape"
+			    android:orientation="vertical"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+		    	android:layout_marginLeft="@dimen/no_margin"
+		    	android:layout_marginRight="@dimen/no_margin"
+		    	android:layout_marginTop="@dimen/no_margin"
+		    	android:layout_marginBottom="@dimen/no_margin"
+		    	android:padding="@dimen/no_padding"
+			    android:background="@color/opaque_medium_blue">
+
+			 	<csc212.project4.GraphView
+			    	android:id="@+id/grphvw_rule90Landscape"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_gravity="center_horizontal"
+		    		android:layout_marginLeft="@dimen/no_margin"
+		    		android:layout_marginRight="@dimen/no_margin"
+		    		android:layout_marginTop="@dimen/no_margin"
+		    		android:layout_marginBottom="@dimen/no_margin"
+		    		android:padding="@dimen/no_padding"
+		    		android:contentDescription="@string/contentDesc_rule90image"
+			       	android:background="@color/opaque_medium_blue" />
+
+   			</LinearLayout>	<!-- end CArenderedLandscape -->
+			
+		</LinearLayout> <!--end right column-->
+	</LinearLayout>		<!--end three columns-->
+
+</LinearLayout>       <!--end outer-->

@@ -1,0 +1,157 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:id="@+id/linlyo_main_outer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@color/opaque_medium_blue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:stretchColumns="1"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+
+        android:id="@+id/linlyo_main_top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="72"
+        android:background="@color/opaque_medium_blue"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:stretchColumns="1" >
+    
+	    <TextView
+	        android:id="@+id/txtvw_Instructions"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="30"
+	        android:layout_gravity="fill_vertical|fill_horizontal"
+	        android:enabled="true"
+	        android:paddingBottom="@dimen/instructions_padding_vertical"
+	        android:paddingLeft="@dimen/instructions_padding_horiz"
+	        android:paddingRight="@dimen/instructions_padding_horiz"
+	        android:paddingTop="@dimen/instructions_padding_vertical"
+	        android:text="@string/instructions_label"
+	        android:textAllCaps="true"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/opaque_black"
+	        android:textColorLink="@color/opaque_black"
+	        android:textSize="@dimen/main_instructions_pt_size"
+	        android:textStyle="normal"
+	        android:typeface="sans" />
+
+	    <Spinner
+	        android:id="@+id/spnr_rules"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="35"
+	        android:entries="@array/rulesDesc_strArray"
+	        android:prompt="@string/spnrRules_prompt" />
+	
+	    <Spinner
+		    android:id="@+id/spnr_iterations"
+	        android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="35"
+		    android:entries="@array/iterations_strArray"
+		    android:prompt="@string/spnrIterations_prompt" />
+	 
+ 	</LinearLayout>
+       
+
+    <LinearLayout
+	   android:id="@+id/linlyo_main_middle"
+	   android:orientation="vertical"
+	   android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="100"
+       android:layout_weight="14"
+       android:background="@color/opaque_medium_blue" >
+    
+	    <Button
+		    android:id="@+id/btn_overview_from_main"
+		    android:enabled="true"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="100"
+		    android:layout_marginTop="@dimen/rule_wide_button_margin_top"
+		    android:layout_marginBottom="@dimen/rule_wide_button_margin_bottom"
+		    android:layout_marginLeft="@dimen/ovrvw_wide_button_margin_left"
+			android:layout_marginRight="@dimen/ovrvw_wide_button_margin_right"
+		    android:paddingTop="@dimen/wide_button_padding_top"
+		    android:paddingBottom="@dimen/wide_button_padding_bottom"
+		    android:paddingLeft="@dimen/instructions_padding_horiz"
+		    android:paddingRight="@dimen/instructions_padding_horiz"
+		    android:background="@color/opaque_black"
+		    android:gravity="center" 
+		    android:text="@string/ca_overview_label"
+		    android:textColor="@color/opaque_dark_cornflwrblue"
+		    android:textColorHint="@color/opaque_dark_cornflwrblue"
+		    android:textColorLink="@color/opaque_dark_blue"
+		    android:textStyle="normal"
+		    android:typeface="sans" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+
+        android:id="@+id/linlyo_main_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="14"
+        android:layout_marginLeft="@dimen/ovrvw_narrow_button_margin_left"
+        android:layout_marginRight="@dimen/ovrvw_narrow_button_margin_right" >
+                
+        <Button
+            android:id="@+id/btn_display"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+            android:layout_gravity="center"
+            android:background="@color/opaque_black"
+            android:hint="@string/display_button_hint"
+            android:text="@string/display_label"
+            android:textColor="@color/opaque_dark_cornflwrblue"
+            android:textColorHint="@color/opaque_dark_cornflwrblue"
+            android:textColorLink="@color/opaque_dark_blue"
+            android:textStyle="normal"
+            android:typeface="sans" />
+        
+        <Button
+            android:id="@+id/btn_ghost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:background="@color/opaque_medium_blue" /> 
+        
+<!--have eliminated all exit options, but keeping button for spacing for now; user will use back btn instead to back out-->
+        <Button
+            android:id="@+id/btn_exit_from_main"
+            android:enabled="false"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+			android:layout_gravity="center"
+            android:background="@color/opaque_medium_blue"
+            android:text="@string/exit_label"
+            android:textColor="@color/opaque_medium_blue"
+            android:textColorHint="@color/opaque_medium_blue"
+            android:textColorLink="@color/opaque_medium_blue"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</LinearLayout>

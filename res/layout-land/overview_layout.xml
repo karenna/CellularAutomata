@@ -1,0 +1,139 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linlyo_overview_outer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/opaque_medium_blue"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".OverviewActivity" >
+    
+	<LinearLayout
+
+        android:id="@+id/linlyo_overview_top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="85"
+        android:weightSum="100"
+        android:background="@color/opaque_medium_blue"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:stretchColumns="1"
+        tools:context=".OverviewActivity" >
+
+	    <TextView
+	        android:id="@+id/txtvw_overview_paragraph1"
+	        android:enabled="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="40"
+	        android:layout_marginTop="@dimen/ovrvw_instructions_par_margin_top"
+	        android:layout_marginBottom="@dimen/ovrvw_instructions_par_margin_bottom"
+	        android:paddingTop="@dimen/ovrvw_instructions_par_padding_top"
+	        android:paddingBottom="@dimen/ovrvw_instructions_par_padding_bottom"
+	        android:paddingLeft="@dimen/instructions_padding_horiz"
+	        android:paddingRight="@dimen/instructions_padding_horiz"
+	        android:text="@string/ca_ovrvw_par1"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/opaque_black"
+	        android:textColorLink="@color/opaque_black"
+	        android:textSize="@dimen/instructions_pt_size"
+	        android:textStyle="normal"
+	        android:typeface="sans" />
+
+	    <TextView
+	        android:id="@+id/txtvw_overview_paragraph2"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_marginBottom="@dimen/ovrvw_instructions_par_margin_bottom"
+	        android:layout_marginTop="@dimen/ovrvw_instructions_par_margin_top"
+	        android:layout_weight="40"
+	        android:enabled="true"
+	        android:paddingBottom="@dimen/ovrvw_instructions_par_padding_bottom"
+	        android:paddingLeft="@dimen/instructions_padding_horiz"
+	        android:paddingRight="@dimen/instructions_padding_horiz"
+	        android:paddingTop="@dimen/ovrvw_instructions_par_padding_top"
+	        android:text="@string/ca_ovrvw_par2"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/opaque_black"
+	        android:textColorLink="@color/opaque_black"
+	        android:textSize="@dimen/instructions_pt_size"
+	        android:textStyle="normal"
+	        android:typeface="sans" />
+	
+	    <TextView
+	        android:id="@+id/txtvw_overview_paragraph3"
+	        android:enabled="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="20"
+	        android:layout_marginTop="@dimen/ovrvw_instructions_par_margin_top"
+	        android:layout_marginBottom="@dimen/ovrvw_instructions_par_margin_bottom"
+	        android:paddingTop="@dimen/ovrvw_instructions_par_padding_top"
+	        android:paddingBottom="@dimen/ovrvw_instructions_par_padding_bottom"
+	        android:paddingLeft="@dimen/instructions_padding_horiz"
+	        android:paddingRight="@dimen/instructions_padding_horiz"
+	        android:text="@string/ca_ovrvw_par3"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/opaque_black"
+	        android:textColorLink="@color/opaque_black"
+	        android:textSize="@dimen/instructions_pt_size"
+	        android:textStyle="normal"
+	        android:typeface="sans" />
+	
+	</LinearLayout>
+
+	<LinearLayout
+        android:id="@+id/linlyo_overview_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_weight="14"
+        android:layout_marginLeft="@dimen/ovrvw_narrow_button_margin_left"
+        android:layout_marginRight="@dimen/ovrvw_narrow_button_margin_right" >
+
+        <Button
+            android:id="@+id/btn_return_to_prior_from_overview"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+            android:layout_gravity="center"
+            android:background="@color/opaque_black"
+            android:hint="@string/return_to_main_button_hint"
+            android:text="@string/return_to_main_label"
+            android:textColor="@color/opaque_dark_cornflwrblue"
+            android:textColorHint="@color/opaque_dark_cornflwrblue"
+            android:textColorLink="@color/opaque_dark_blue"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btn_ghost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:background="@color/opaque_medium_blue" />
+
+        <Button
+            android:id="@+id/btn_exit_from_overview"
+            android:enabled="false"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="40"
+            android:layout_gravity="center"
+            android:background="@color/opaque_medium_blue"
+            android:text="@string/exit_label"
+            android:textColor="@color/opaque_medium_blue"
+            android:textColorHint="@color/opaque_medium_blue"
+            android:textColorLink="@color/opaque_medium_blue"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</LinearLayout>
